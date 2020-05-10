@@ -30,5 +30,11 @@ pipeline {
 		failure {
 			echo 'I run when you fail'
 		}
+		changed {
+			echo 'changed'
+		}
+		unstable {
+			echo 'unstable'
+		}
 	}
 }
